@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Image Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css" media="screen"/>
+</head>
+<body>
+
+    <h1> Snapshots </h1>
+
+    <ul> 
+        <li>
+            <a href="img/1.jpg" onclick="showPic(this); return false;" title="girl 1"> girl 1 </a>
+        </li>
+        <li>
+            <a href="img/2.jpg" onclick="showPic(this); return false;" title="girl 2"> girl 2 </a>
+        </li>
+        <li>
+            <a href="img/3.jpg" onclick="showPic(this); return false;" title="girl 3"> girl 3 </a>
+        </li>
+        <li>
+            <a href="img/4.jpg" onclick="showPic(this); return false;" title="girl 4"> girl 4 </a>
+        </li>
+        <li>
+            <a href="img/5.jpg" onclick="showPic(this); return false;" title="girl 5"> girl 5 </a>
+        </li>
+    </ul>
+    <img id="placeholderImg" src="img/6.jpg" alt="my image gallery" />
+    <p id="description" > Choose an image. </p>
+    <p><a href="javascript:popUp('http://www.google.com/')">Example</a></p>
+    <p><a href="#" onclick="popUp('http://www.google.com/')">Example2</a></p>
+
+    <script type="text/javascript" src = "js/popUp.js"> </script>
+    <script type="text/javascript" src="js/showPic.js"> </script>
+</body>
+</html>
+
