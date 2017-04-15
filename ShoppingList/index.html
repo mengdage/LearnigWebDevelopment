@@ -8,10 +8,28 @@
   <body>
     <h1>Welcome to the Shopping List</h1>
 
+    <ui-view></ui-view>
+    <loading-spinner></loading-spinner>
+
     <!-- Libraries -->
     <script type="text/javascript" src="lib/angular.min.js"> </script>
-    <script type="text/javascript" src="lib/angular-ui-router.min.js">
+    <script type="text/javascript" src="lib/angular-ui-router.min.js"> </script>
 
-    </script>
+    <!-- Modules -->
+    <script type="text/javascript" src="src/shoppinglist/shoppinglist.module.js"> </script>
+    <script type="text/javascript" src="src/spinner/spinner.module.js"> </script>
+
+    <!-- Routes -->
+    <script type="text/javascript" src="src/routes.js"> </script>
+
+    <!-- ShoppingList module artifacts-->
+    <script type="text/javascript" src="src/shoppinglist/main-shoppinglist.controller.js"> </script>
+    <script type="text/javascript" src="src/shoppinglist/shoppinglist.service.js"> </script>
+    <script type="text/javascript" src="src/shoppinglist/item-detail.controller.js"> </script>
+    <script type="text/javascript" src="src/shoppinglist/shoppinglist.component.js"> </script>
+
+    <script type="text/javascript" src="src/spinner/loadingspinner.component.js"> </script>
+
+
   </body>
 </html>
