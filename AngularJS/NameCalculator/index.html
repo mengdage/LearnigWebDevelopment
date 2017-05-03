@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="NameCalculator">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Name Calculator</title>
+  </head>
+  <body>
+
+    <h1>Name Calculator</h1>
+    <div class="" ng-controller="NameCalculatorController as ncController">
+      <input type="text" ng-model="ncController.name" ng-keyup="ncController.calculateNameValue();" name="" value="">
+      <button type="button" ng-click="ncController.submitArtist();" name="button">submit</button>
+      <p>The value of your name |{{ncController.name|doubleContent}}|: {{ncController.nameValue}}.</p>
+      <p>artist: {{ncController.artist}}</p>
+      <p ng-if="ncController.artistData">artist data: {{ncController.artistData}}</p>
+
+    </div>
+    <script type="text/javascript" src="lib/angular.min.js"> </script>
+    <script type="text/javascript" src="js/app.js"> </script>
+  </body>
+</html>
