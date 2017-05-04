@@ -1,0 +1,31 @@
+body{
+  font-size: 18px;
+}
+
+/*accordion*/
+.accordion {
+  width: 500px;
+  margin: 10px auto;
+}
+.accordion li{
+  list-style-type: none;
+}
+.accordion button.accordion-control {
+  width: 100%;
+  background-color: #4083ef;
+  color: #FFF;
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  border: 0;
+}
+.accordion button.accordion-control:hover {
+  cursor: pointer;
+}
+.accordion div.accordion-panel {
+  border: 0;
+  background-color: #7daaf2;
+  padding: 5px;
+
+}
+/*end of accordion*/
