@@ -4,7 +4,8 @@ $(
 // accordion
   $(".accordion").on("click", ".accordion-control", function(e){
     e.preventDefault();
-
+    // print("hello");
+    // console.log("hello");
     $(this)
     .next(".accordion-panel")
     .not(":animated")
@@ -37,6 +38,15 @@ $(
 
   });
 
+  // modal window
+  var $content = $("#content");
+  $content.detach();
+  $("#showModal").on("click", function(){
+  modal.open({
+    content: $content
+  });
+
+});
 
 
   }
